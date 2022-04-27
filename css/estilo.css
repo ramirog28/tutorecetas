@@ -69,6 +69,7 @@ a:hover {
     font-weight:500;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 20%;
+    transition: background-color 0.2s;
 }
 
 .navbar ul ul {
@@ -164,6 +165,7 @@ a:hover {
     align-items: center;
     padding: 2rem 1rem 1.5rem 1rem;
     margin: 3rem 6rem 3rem 6rem;
+    transition: all 0.4s;
 }
 
 .brownie:hover, .budin:hover,.cheesecake:hover, .flan:hover, .tiramisu:hover, .volcan:hover{
@@ -373,6 +375,7 @@ footer i:hover {
 footer i {
  color: rgb(56, 55, 55);
  font-size: 3.5em;
+ transition: transform 0.2s;
 }
 
 h3{
