@@ -37,10 +37,6 @@ a {
     color: black;
 }
 
-a:hover {
-    color: black;
-}
-
 
 /* nav */
 
@@ -55,9 +51,8 @@ a:hover {
 }
 
 .navbar ul {
-    font-size: 0;
     width: 100%;
-    padding:0.3rem 0.3rem 0 0.3rem;
+    background-color: #e8c39e;
 }
 
 .navbar li {
@@ -65,23 +60,24 @@ a:hover {
     z-index: 16;
     display: inline-block;
     position: relative;
-    margin-top: 0.15rem;
-    font-weight:500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 20%;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: background-color 0.2s;
+    border-radius: 0.8rem;
+}
+
+.navbar li a{
+    color: black;
+    font-weight: 700;
 }
 
 .navbar ul ul {
     position: absolute;
     display: none;
     padding-bottom: .3rem;
-}
-
-.navbar ul li:hover ul{
-    display: block;
-    background-color:#e8c39e;
-    border-radius: 0 0 8px 8px;
+    border-radius: 1rem;
+    width: 100%;
 }
 
 .navbar li:hover{
@@ -100,9 +96,10 @@ a:hover {
 }
 
 .navbar ul ul li a {
-    width: 100%;
     display: inline-block;
     padding: 0;
+    border-radius: .5rem;
+    font-weight: 400;
 }
 
 .navbar ul ul li a:hover{
@@ -110,26 +107,29 @@ a:hover {
     border-radius: 1rem;
 }
 
-.navbar i:not(.fa-bars) {
+.navbar i{
+    display: inline-block;
     text-align: right;
     margin-right: 1rem;
+    color: black;
 }
 
-#menu-bar {
-    display: none;
+.container-fluid {
+    background-color: #e8c39e;
+    height: 100%;
 }
+
+
 
 
 /* header */
 
 .portada {
     grid-area: titulo;
-    width: 100%;
 }
 
 .imagen {
     width: 100%;
-    background-size: cover;
 }
 
 
@@ -459,6 +459,20 @@ footer a{
     }
 }
 
+@media (max-width:991px) {
+    .navbar-collapse {
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .navbar-nav {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .navbar-collapse li {
+        width: 100%;
+    }
+}
+
 @media (max-width:920px) {
     .brownie, .cheesecake, .tiramisu, .budin, .flan, .volcan {
         margin: 2rem 5rem 2rem 5rem;
@@ -480,7 +494,7 @@ footer a{
 }
 
 @media (max-width:810px) {
-    .grid-index {
+    .grid {
     grid-template-areas:
     "nav"
     "titulo"
@@ -494,8 +508,8 @@ footer a{
     "footer";
     }
 
-    .descripcionIndex {
-        font-size: 2rem;
+    .imagen {
+        width: 100%;
     }
 
     .brownie, .cheesecake, .tiramisu, .budin, .flan, .volcan {
@@ -547,6 +561,14 @@ footer a{
         font-size: 2rem;
         margin-right: 1.5rem;
         margin-left: 1.5rem;
+    }
+
+    .descripcionIndex {
+        font-size: 2rem;
+    }
+
+    .brownie h2, .budin h2, .cheesecake h2, .flan h2, .tiramisu h2, .volcan h2 {
+        font-size: 1.8rem;
     }
 
     .tituloImagenRecetas img {
@@ -628,6 +650,11 @@ footer a{
 
     .introReceta {
         font-size: 2rem;
+    }
+
+    .brownie img, .budin img, .cheesecake img, .flan img, .tiramisu img, .volcan img {
+        height: 23rem;
+        width: 21rem;
     }
 
     .procedimiento img {
