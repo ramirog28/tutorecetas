@@ -1,0 +1,15 @@
+.descripcionIndex {
+    grid-area: main;
+    font-size: 2.4rem;
+    border-top:#f1b579 solid 0.8rem;
+    border-bottom:#f1b579 solid 0.8rem;
+    border-radius: 1.8rem;
+    padding: 1.6rem 0 1.6rem 0;
+    margin: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    grid-area: main;
+}

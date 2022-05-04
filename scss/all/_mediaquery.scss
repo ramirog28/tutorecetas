@@ -1,0 +1,353 @@
+@media (max-width:1300px) {
+    .grid {
+    grid-template-areas:
+    "nav nav"
+    "titulo titulo"
+    "main main"
+    "brownie budin"
+    "cheesecake flan"
+    "tiramisu volcan"
+    "footer footer";
+    }
+
+    .navbar li{
+        font-size: 1.5rem;
+    }
+
+    .navbar i {
+    font-size: 1.3rem;
+    margin-right: 0.7rem;
+    }
+
+    .descripcionIndex {
+        font-size: 2.2rem;
+    }
+
+    section img {
+        height: 23rem;
+        width: 24rem;
+    }
+
+    .brownie, .cheesecake, .tiramisu {
+        margin-left: 15rem;
+        margin-right: 3rem;
+    }
+
+    .budin, .flan, .volcan {
+        margin-left: 3rem;
+        margin-right: 15rem;
+    }
+
+    .linksDePie {
+        font-size: 1.5rem;
+    }
+
+    .iconos {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:1100px) {
+    .brownie, .cheesecake, .tiramisu {
+        margin-left: 10rem;
+        margin-right: 3rem;
+    }
+
+    .budin, .flan, .volcan {
+        margin-left: 3rem;
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-collapse {
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .navbar-nav {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .navbar-collapse li {
+        width: 100%;
+    }
+}
+
+@media (max-width:920px) {
+    section {
+        margin: 2rem 5rem 2rem 5rem;
+    }
+
+    .brownie, .cheesecake, .tiramisu {
+        margin-left: 4rem;
+        margin-right: 2rem;
+    }
+
+    .budin, .flan, .volcan {
+        margin-left: 2rem;
+        margin-right: 4rem;
+    }
+
+    form {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:810px) {
+    .grid {
+    grid-template-areas:
+    "nav"
+    "titulo"
+    "main"
+    "brownie"
+    "budin"
+    "cheesecake"
+    "flan"
+    "tiramisu"
+    "volcan"
+    "footer";
+    }
+
+    .imagen {
+        width: 100%;
+    }
+
+
+    section {
+        margin: 2rem 19rem 2rem 19rem;
+    }
+
+    section img {
+        height: 24rem;
+        width: 25rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+
+    .card-sobreNosotros {
+        width: 96%;
+        align-items: center;
+
+        img {
+            width: 15rem;
+            height: 15rem;
+            margin: 1 rem;
+        }
+
+        p {
+            margin: 0 1rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    .carousel {
+        width: 50rem;
+
+        img {
+            border-radius: none;
+        }
+    }
+
+    .carousel-inner h3 {
+        font-size: 3rem;
+    }
+
+
+    .ingredientesUtencilios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ingredientes{
+        margin-left: 4rem;
+    }
+
+    .utencilios{
+        margin-right: 4rem;
+    }
+
+    .linksDePie {
+        font-size: 1.4rem;
+    }
+
+    .iconos {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:680px) {
+    section {
+        margin: 2rem 13rem 2rem 13rem;
+    }
+
+    .tituloReceta {
+        font-size: 3.2rem;
+    }
+
+    .introReceta {
+        font-size: 2rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .descripcionIndex {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .ingredientesUtencilios {
+        font-size: 1.6rem;
+    }
+
+    .procedimiento {
+        font-size: 2rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+
+        img {
+            width: 26rem;
+        }
+    }
+
+    .tipsCuriosidades {
+        font-size: 1.7rem;
+        margin-left: 0rem;
+        margin-right: 1rem;
+
+        p {
+            font-size: 1.8rem;
+            margin-left: 1.2rem;
+        }
+    }
+}
+
+@media (max-width:627px) {
+    section {
+        margin: 2rem 9.5rem 2rem 9.5rem;
+
+        img {
+            height: 22rem;
+        width: 23rem;
+        }
+    }
+    
+    .card-sobreNosotros img {
+        width: 13rem;
+        height: 13rem;
+    }
+    
+    .card-sobreNosotros p {
+        margin: 0 1rem;
+        font-size: 1.4rem;
+    }
+
+
+    .carousel {
+        width: 34rem;
+    }
+    
+    .carousel-inner h3 {
+        font-size: 2.8rem;
+    }
+
+    
+    .header-footer {
+        font-size: 2.2rem;
+        margin-bottom: 0rem;
+    }
+
+    .iconos {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:500px) {
+    section {
+        margin: 2rem 6rem 2rem 6rem;
+    }
+
+    .portada {
+        padding-top: 1.5rem;
+    }
+
+    .card-sobreNosotros {
+        flex-direction: column;
+
+        img {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+
+    .ingredientesUtencilios {
+        font-size: 1.5rem;
+    }
+    
+    .ingredientes {
+        margin-left: 2rem;
+        margin-right: 1.5rem;
+    }
+    
+    .utencilios {
+        margin-right: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    form {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width:360px) {
+    .tituloReceta {
+        font-size: 2.9rem;
+    }
+
+    .tituloImagenRecetas img {
+        width: 20rem;
+        height: 22rem;
+    }
+
+    .introReceta {
+        font-size: 2rem;
+    }
+
+    section img {
+        height: 23rem;
+        width: 21rem;
+    }
+
+
+    .carousel {
+        width: 25rem;
+    }
+
+    .carousel-inner h3 {
+        font-size: 2.6rem;
+    }
+
+
+    .procedimiento img {
+        width: 27rem;
+    }
+
+    .linksDePie {
+        font-size: 1rem;
+    }
+
+    footer h4 {
+        font-size: 2rem;
+    }
+
+    .iconos {
+        font-size: 0.7rem;
+    }
+}

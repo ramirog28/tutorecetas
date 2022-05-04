@@ -1,0 +1,383 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.grid {
+  display: grid;
+  grid-template-areas: "nav nav nav" "titulo titulo titulo" "main main main" "brownie budin cheesecake" "flan tiramisu volcan" "footer footer footer"; }
+
+body {
+  background-color: antiquewhite;
+  box-sizing: content-box; }
+
+body::-webkit-scrollbar {
+  width: 8px; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f1b579;
+  border-radius: 10px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    color: black; }
+
+.navbar {
+  grid-area: nav;
+  background-color: #e8c39e;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  padding: 0;
+  height: 3.6rem; }
+  .navbar ul {
+    width: 100%;
+    background-color: #e8c39e; }
+    .navbar ul li {
+      text-align: center; }
+    .navbar ul ul {
+      position: absolute;
+      display: none;
+      padding-bottom: .3rem;
+      border-radius: 1rem;
+      width: 100%; }
+      .navbar ul ul li {
+        width: 100%;
+        padding: none;
+        font-family: Arial, Helvetica, sans-serif; }
+        .navbar ul ul li a {
+          display: inline-block;
+          padding: 0;
+          border-radius: .5rem;
+          font-weight: 400; }
+          .navbar ul ul li a:hover {
+            background-color: #f1d3b5;
+            border-radius: 1rem; }
+    .navbar ul li {
+      text-align: center; }
+  .navbar li {
+    font-size: 1.7rem;
+    z-index: 16;
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    font-weight: 400;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0.8rem;
+    transition: background-color 0.2s; }
+    .navbar li a {
+      color: black;
+      font-weight: 700; }
+    .navbar li:hover {
+      border-radius: 0.8rem;
+      background-color: #f1d3b5; }
+  .navbar i {
+    display: inline-block;
+    text-align: right;
+    margin-right: 1rem;
+    color: black; }
+  .navbar .container-fluid {
+    background-color: #e8c39e;
+    height: 100%; }
+
+.portada {
+  grid-area: titulo; }
+
+.imagen {
+  width: 100%; }
+
+.descripcionIndex {
+  grid-area: main;
+  font-size: 2.4rem;
+  border-top: #f1b579 solid 0.8rem;
+  border-bottom: #f1b579 solid 0.8rem;
+  border-radius: 1.8rem;
+  padding: 1.6rem 0 1.6rem 0;
+  margin: 2rem 1rem 2rem 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+main {
+  grid-area: main; }
+
+section {
+  border: #f1b579 solid 0.5rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #D8D8D8;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem 1.5rem 1rem;
+  margin: 3rem 6rem 3rem 6rem;
+  transition: all 0.4s; }
+  section:hover {
+    transform: scale(1.05);
+    background-color: #fae3c6;
+    box-shadow: 5px 5px 5px #cfcfcf; }
+  section img {
+    height: 23rem;
+    width: 23rem;
+    object-fit: cover;
+    border-radius: 1.5rem; }
+  section h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    position: relative;
+    top: 0.8rem;
+    background-color: #fafafa;
+    border-radius: 2rem; }
+
+.budin img {
+  object-position: -9rem; }
+
+.brownie {
+  grid-area: brownie; }
+
+.budin {
+  grid-area: budin; }
+
+.cheesecake {
+  grid-area: cheesecake; }
+
+.flan {
+  grid-area: flan; }
+
+.tiramisu {
+  grid-area: tiramisu; }
+
+.volcan {
+  grid-area: volcan; }
+
+footer {
+  grid-area: footer; }
+
+footer {
+  border: #e8c39e solid 1rem;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column; }
+  footer i {
+    color: #383737;
+    font-size: 3.5em;
+    transition: transform 0.2s; }
+    footer i:hover {
+      transform: scale(1.2); }
+
+.iconos {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0 1rem 0;
+  background-color: #f1e1cb;
+  padding: 1rem 0 1rem 0;
+  border-radius: 2rem; }
+
+.header-footer {
+  font-size: 2.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 80;
+  display: flex;
+  justify-content: center;
+  margin: 1.2rem; }
+
+.linksDePie {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.5rem 0.5rem 1.5rem; }
+
+@media (max-width: 1300px) {
+  .grid {
+    grid-template-areas: "nav nav" "titulo titulo" "main main" "brownie budin" "cheesecake flan" "tiramisu volcan" "footer footer"; }
+  .navbar li {
+    font-size: 1.5rem; }
+  .navbar i {
+    font-size: 1.3rem;
+    margin-right: 0.7rem; }
+  .descripcionIndex {
+    font-size: 2.2rem; }
+  section img {
+    height: 23rem;
+    width: 24rem; }
+  .brownie, .cheesecake, .tiramisu {
+    margin-left: 15rem;
+    margin-right: 3rem; }
+  .budin, .flan, .volcan {
+    margin-left: 3rem;
+    margin-right: 15rem; }
+  .linksDePie {
+    font-size: 1.5rem; }
+  .iconos {
+    font-size: 1.3rem; } }
+
+@media (max-width: 1100px) {
+  .brownie, .cheesecake, .tiramisu {
+    margin-left: 10rem;
+    margin-right: 3rem; }
+  .budin, .flan, .volcan {
+    margin-left: 3rem;
+    margin-right: 10rem; } }
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    border-radius: 0 0 1rem 1rem; }
+  .navbar-nav {
+    border-radius: 0 0 0.5rem 0.5rem; }
+  .navbar-collapse li {
+    width: 100%; } }
+
+@media (max-width: 920px) {
+  section {
+    margin: 2rem 5rem 2rem 5rem; }
+  .brownie, .cheesecake, .tiramisu {
+    margin-left: 4rem;
+    margin-right: 2rem; }
+  .budin, .flan, .volcan {
+    margin-left: 2rem;
+    margin-right: 4rem; }
+  form {
+    font-size: 1.5rem; } }
+
+@media (max-width: 810px) {
+  .grid {
+    grid-template-areas: "nav" "titulo" "main" "brownie" "budin" "cheesecake" "flan" "tiramisu" "volcan" "footer"; }
+  .imagen {
+    width: 100%; }
+  section {
+    margin: 2rem 19rem 2rem 19rem; }
+  section img {
+    height: 24rem;
+    width: 25rem; }
+  section h2 {
+    font-size: 2rem; }
+  .card-sobreNosotros {
+    width: 96%;
+    align-items: center; }
+    .card-sobreNosotros img {
+      width: 15rem;
+      height: 15rem;
+      margin: 1 rem; }
+    .card-sobreNosotros p {
+      margin: 0 1rem;
+      font-size: 1.6rem; }
+  .carousel {
+    width: 50rem; }
+    .carousel img {
+      border-radius: none; }
+  .carousel-inner h3 {
+    font-size: 3rem; }
+  .ingredientesUtencilios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .ingredientes {
+    margin-left: 4rem; }
+  .utencilios {
+    margin-right: 4rem; }
+  .linksDePie {
+    font-size: 1.4rem; }
+  .iconos {
+    font-size: 1.2rem; } }
+
+@media (max-width: 680px) {
+  section {
+    margin: 2rem 13rem 2rem 13rem; }
+  .tituloReceta {
+    font-size: 3.2rem; }
+  .introReceta {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem; }
+  .descripcionIndex {
+    font-size: 2rem; }
+  section h2 {
+    font-size: 1.8rem; }
+  .ingredientesUtencilios {
+    font-size: 1.6rem; }
+  .procedimiento {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem; }
+    .procedimiento img {
+      width: 26rem; }
+  .tipsCuriosidades {
+    font-size: 1.7rem;
+    margin-left: 0rem;
+    margin-right: 1rem; }
+    .tipsCuriosidades p {
+      font-size: 1.8rem;
+      margin-left: 1.2rem; } }
+
+@media (max-width: 627px) {
+  section {
+    margin: 2rem 9.5rem 2rem 9.5rem; }
+    section img {
+      height: 22rem;
+      width: 23rem; }
+  .card-sobreNosotros img {
+    width: 13rem;
+    height: 13rem; }
+  .card-sobreNosotros p {
+    margin: 0 1rem;
+    font-size: 1.4rem; }
+  .carousel {
+    width: 34rem; }
+  .carousel-inner h3 {
+    font-size: 2.8rem; }
+  .header-footer {
+    font-size: 2.2rem;
+    margin-bottom: 0rem; }
+  .iconos {
+    font-size: 0.9rem; } }
+
+@media (max-width: 500px) {
+  section {
+    margin: 2rem 6rem 2rem 6rem; }
+  .portada {
+    padding-top: 1.5rem; }
+  .card-sobreNosotros {
+    flex-direction: column; }
+    .card-sobreNosotros img {
+      width: 10rem;
+      height: 10rem; }
+  .ingredientesUtencilios {
+    font-size: 1.5rem; }
+  .ingredientes {
+    margin-left: 2rem;
+    margin-right: 1.5rem; }
+  .utencilios {
+    margin-right: 2rem;
+    margin-left: 1.5rem; }
+  form {
+    font-size: 1.3rem; } }
+
+@media (max-width: 360px) {
+  .tituloReceta {
+    font-size: 2.9rem; }
+  .tituloImagenRecetas img {
+    width: 20rem;
+    height: 22rem; }
+  .introReceta {
+    font-size: 2rem; }
+  section img {
+    height: 23rem;
+    width: 21rem; }
+  .carousel {
+    width: 25rem; }
+  .carousel-inner h3 {
+    font-size: 2.6rem; }
+  .procedimiento img {
+    width: 27rem; }
+  .linksDePie {
+    font-size: 1rem; }
+  footer h4 {
+    font-size: 2rem; }
+  .iconos {
+    font-size: 0.7rem; } }

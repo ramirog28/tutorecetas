@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "titulo titulo titulo"
+    "main main main"
+    "brownie budin cheesecake"
+    "flan tiramisu volcan"
+    "footer footer footer";
+}
+
+body{
+    background-color:antiquewhite;
+    box-sizing: content-box;
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#f1b579;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: black;
+    }
+}

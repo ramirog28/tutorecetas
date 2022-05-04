@@ -1,0 +1,87 @@
+$navColor: #e8c39e;
+$navFontSize: 1.7rem;
+$navFontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$hoverNavBackground: #f1d3b5;
+$familySubMenu: Arial, Helvetica, sans-serif;
+
+.navbar {
+    grid-area: nav;
+    background-color: $navColor;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    padding: 0;
+    height: 3.6rem;
+
+    ul {
+        width: 100%;
+        background-color: $navColor;
+
+        li{
+            text-align: center;
+        }
+
+        ul {
+            position: absolute;
+            display: none;
+            padding-bottom: .3rem;
+            border-radius: 1rem;
+            width: 100%;
+
+            li {
+                width: 100%;
+                padding: none;
+                font-family: $familySubMenu;
+
+                a {
+                    display: inline-block;
+                    padding: 0;
+                    border-radius: .5rem;
+                    font-weight: 400;
+
+                    &:hover {
+                        background-color: $hoverNavBackground;
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
+
+        li {
+            text-align: center;
+        }
+    }
+
+    li {
+        font-size: $navFontSize;
+        z-index: 16;
+        display: inline-block;
+        position: relative;
+        width: 20%;
+        font-weight: 400;
+        font-family: $navFontFamily;
+        border-radius: 0.8rem;
+        transition: background-color 0.2s;
+
+        a {
+            color: black;
+            font-weight: 700;
+        }
+
+        &:hover {
+            border-radius: 0.8rem;
+            background-color: $hoverNavBackground;
+        }
+    }
+
+    i {
+        display: inline-block;
+        text-align: right;
+        margin-right: 1rem;
+        color: black;
+    }
+    .container-fluid {
+        background-color: #e8c39e;
+        height: 100%;
+    }
+}
