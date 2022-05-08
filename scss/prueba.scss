@@ -1,7 +1,7 @@
-@import "all/all.scss";
-@import "index/nav.scss";
-@import "index/header.scss";
-@import "index/main.scss";
-@import "index/main-recetas.scss";
-@import "index/footer.scss";
+@import "all/reset";
+@import "all/nav";
+@import "all/header";
+@import "index/main";
+@import "index/main-recetas";
+@import "all/footer";
 @import "all/mediaquery";

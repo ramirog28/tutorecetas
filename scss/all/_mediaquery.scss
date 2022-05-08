@@ -94,38 +94,22 @@
 }
 
 @media (max-width:810px) {
-    .grid {
-    grid-template-areas:
-    "nav"
-    "titulo"
-    "main"
-    "brownie"
-    "budin"
-    "cheesecake"
-    "flan"
-    "tiramisu"
-    "volcan"
-    "footer";
-    }
-
     .imagen {
         width: 100%;
     }
 
-
     section {
-        margin: 2rem 19rem 2rem 19rem;
-    }
+        margin: 2rem 19rem;
 
-    section img {
-        height: 24rem;
-        width: 25rem;
-    }
+        img {
+            height: 22rem;
+            width: 23rem;
+        }
 
-    section h2 {
-        font-size: 2rem;
+        h2 {
+            font-size: 2rem;
+        }
     }
-
 
     .card-sobreNosotros {
         width: 96%;
@@ -180,8 +164,22 @@
 }
 
 @media (max-width:680px) {
-    section {
-        margin: 2rem 13rem 2rem 13rem;
+    .grid {
+        grid-template-areas:
+        "nav"
+        "titulo"
+        "main"
+        "brownie"
+        "budin"
+        "cheesecake"
+        "flan"
+        "tiramisu"
+        "volcan"
+        "footer";
+    }
+
+    .grid section {
+        margin: 2rem 12rem;
     }
 
     .tituloReceta {
@@ -229,8 +227,8 @@
 }
 
 @media (max-width:627px) {
-    section {
-        margin: 2rem 9.5rem 2rem 9.5rem;
+    .grid section {
+        margin: 2rem 9.5rem;
 
         img {
             height: 22rem;
@@ -269,8 +267,8 @@
 }
 
 @media (max-width:500px) {
-    section {
-        margin: 2rem 6rem 2rem 6rem;
+    .grid section {
+        margin: 2rem 6rem;
     }
 
     .portada {
