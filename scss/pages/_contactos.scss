@@ -1,0 +1,36 @@
+.section-contactos {
+    grid-area: main;
+}
+
+.tituloPages {
+    text-align: center;
+    font-size: 4.5rem;
+    margin: 1rem;
+}
+
+form {
+    margin: 4rem auto;
+    width: 50%;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border: #e8c39e solid;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    background-color: #fff5ea;
+
+    input {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.numLabel {
+    margin-top: 1rem;
+}
+
+.submit {
+    background-color: white;
+    border: rgb(221, 221, 221) solid 0.2rem;
+    border-radius: 0.8rem;
+    font-size: 1.15rem;
+    padding: 0.3rem 0.5rem;
+}

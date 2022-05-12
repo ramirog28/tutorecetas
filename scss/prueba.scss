@@ -1,7 +1,20 @@
+@import "variables/variables";
+
 @import "all/reset";
 @import "all/nav";
 @import "all/header";
+
 @import "index/main";
 @import "index/section-recetas";
+
+@import "recetas/recetas";
+
+@import "pages/sobre-nosotros";
+
+@import "pages/galeria";
+
+@import "pages/contactos";
+
 @import "all/footer";
+
 @import "all/mediaquery";

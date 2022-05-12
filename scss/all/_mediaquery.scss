@@ -23,17 +23,17 @@
         font-size: 2.2rem;
     }
 
-    section img {
+    .section-index img {
         height: 23rem;
         width: 24rem;
     }
 
-    .brownie, .cheesecake, .tiramisu {
+    .card-brownie, .card-cheesecake, .card-tiramisu {
         margin-left: 15rem;
         margin-right: 3rem;
     }
 
-    .budin, .flan, .volcan {
+    .card-budin, .card-flan, .card-volcan {
         margin-left: 3rem;
         margin-right: 15rem;
     }
@@ -48,12 +48,12 @@
 }
 
 @media (max-width:1100px) {
-    .brownie, .cheesecake, .tiramisu {
+    .card-brownie, .card-cheesecake, .card-tiramisu {
         margin-left: 10rem;
         margin-right: 3rem;
     }
 
-    .budin, .flan, .volcan {
+    .card-budin, .card-flan, .card-volcan {
         margin-left: 3rem;
         margin-right: 10rem;
     }
@@ -74,16 +74,16 @@
 }
 
 @media (max-width:920px) {
-    section {
-        margin: 2rem 5rem 2rem 5rem;
+    .section-index {
+        margin: 2rem 5rem;
     }
 
-    .brownie, .cheesecake, .tiramisu {
+    .card-brownie, .card-cheesecake, .card-tiramisu {
         margin-left: 4rem;
         margin-right: 2rem;
     }
 
-    .budin, .flan, .volcan {
+    .card-budin, .card-flan, .card-volcan {
         margin-left: 2rem;
         margin-right: 4rem;
     }
@@ -98,9 +98,7 @@
         width: 100%;
     }
 
-    section {
-        margin: 2rem 19rem;
-
+    .section-index {
         img {
             height: 22rem;
             width: 23rem;
@@ -161,6 +159,10 @@
     .iconos {
         font-size: 1.2rem;
     }
+
+    form {
+        width: 70%;
+    }
 }
 
 @media (max-width:680px) {
@@ -178,7 +180,7 @@
         "footer";
     }
 
-    .grid section {
+    .grid .section-index {
         margin: 2rem 12rem;
     }
 
@@ -196,7 +198,7 @@
         font-size: 2rem;
     }
 
-    section h2 {
+    .section-index h2 {
         font-size: 1.8rem;
     }
 
@@ -224,10 +226,14 @@
             margin-left: 1.2rem;
         }
     }
+
+    .tituloPages {
+        font-size: 4.2rem;
+    }
 }
 
 @media (max-width:627px) {
-    .grid section {
+    .grid .section-index {
         margin: 2rem 9.5rem;
 
         img {
@@ -267,7 +273,7 @@
 }
 
 @media (max-width:500px) {
-    .grid section {
+    .grid .section-index {
         margin: 2rem 6rem;
     }
 
@@ -300,6 +306,7 @@
 
     form {
         font-size: 1.3rem;
+        width: 80%;
     }
 }
 
@@ -318,11 +325,14 @@
         font-size: 2rem;
     }
 
-    section img {
+    .section-index img {
         height: 23rem;
         width: 21rem;
     }
 
+    .tituloPages {
+        font-size: 3.5rem;
+    }
 
     .carousel {
         width: 25rem;

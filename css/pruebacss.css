@@ -27,13 +27,15 @@ a {
     color: black; }
 
 .navbar {
-  grid-area: nav;
   background-color: #e8c39e;
-  position: fixed;
   width: 100%;
-  z-index: 50;
-  padding: 0;
   height: 3.6rem; }
+
+.navbar {
+  grid-area: nav;
+  position: fixed;
+  padding: 0;
+  z-index: 50; }
   .navbar ul {
     width: 100%;
     background-color: #e8c39e; }
@@ -102,8 +104,8 @@ a {
 main {
   grid-area: main; }
 
-section {
-  border: #f1b579 solid 0.5rem;
+.section-index {
+  border: #e8c39e solid 0.5rem;
   border-radius: 10px;
   box-shadow: 3px 3px 3px #D8D8D8;
   text-align: center;
@@ -114,18 +116,18 @@ section {
   padding: 2rem 1rem 1.5rem 1rem;
   margin: 3rem 6rem 3rem 6rem;
   transition: all 0.4s; }
-  section a {
+  .section-index a {
     width: 100%; }
-  section:hover {
+  .section-index:hover {
     transform: scale(1.05);
     background-color: #fae3c6;
     box-shadow: 5px 5px 5px #cfcfcf; }
-  section img {
+  .section-index .imgCardRecetas, .section-index .tituloImagenRecetas img, .tituloImagenRecetas .section-index img {
     height: 23rem;
     width: 23rem;
     object-fit: cover;
     border-radius: 1.5rem; }
-  section h2 {
+  .section-index h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-size: 2.1rem;
@@ -134,29 +136,186 @@ section {
     background-color: #fafafa;
     border-radius: 2rem; }
 
-.budin img {
-  object-position: -9rem; }
-
-.brownie {
+.card-brownie {
   grid-area: brownie; }
 
-.budin {
+.card-budin {
   grid-area: budin; }
 
-.cheesecake {
+.card-cheesecake {
   grid-area: cheesecake; }
 
-.flan {
+.card-flan {
   grid-area: flan; }
 
-.tiramisu {
+.card-tiramisu {
   grid-area: tiramisu; }
 
-.volcan {
+.card-volcan {
   grid-area: volcan; }
+
+.card-budin img {
+  object-position: -9rem; }
 
 footer {
   grid-area: footer; }
+
+.section-index img {
+  height: 23rem;
+  width: 23rem;
+  object-fit: cover;
+  border-radius: 1.5rem; }
+
+.tituloImagenRecetas {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem; }
+
+.tituloReceta {
+  font-size: 3.4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.introReceta {
+  font-size: 2.3rem;
+  margin: 0 1rem 3rem 1rem;
+  text-align: justify;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.ingredientesUtencilios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem; }
+
+.ingredientes {
+  border: #a1a1a1 solid;
+  border-radius: 0.5rem;
+  background-color: #d8d8d8;
+  margin-left: 15rem;
+  padding: .5rem 2rem 0 1rem; }
+
+.utencilios {
+  border: #a1a1a1 solid;
+  border-radius: 0.5rem;
+  background-color: #d8d8d8;
+  margin-right: 15rem;
+  padding: .5rem 2rem 0 1rem; }
+
+.procedimiento {
+  margin: 0 0 2rem 1.5rem;
+  font-size: 2.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  .procedimiento li {
+    margin: 0.7rem 0 0.8rem 0; }
+  .procedimiento img {
+    width: 30rem;
+    border: #ffd271 solid;
+    border-radius: 0.5rem; }
+  .procedimiento p {
+    font-weight: bold;
+    margin-top: 3rem; }
+
+.tipsCuriosidades {
+  text-align: justify; }
+  .tipsCuriosidades p {
+    font-size: 2rem;
+    margin-left: 0.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  .tipsCuriosidades ul {
+    display: inline-block;
+    margin: 0 2rem 2rem 2.7rem;
+    font-size: 1.8rem;
+    list-style: disc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.imgBudin {
+  object-position: -11.2rem; }
+
+.tituloImagenRecetas img {
+  width: 30rem;
+  height: 30rem;
+  margin-top: 1.2rem;
+  border: #e8c39e solid 0.6rem; }
+
+.main-sobreNosotros:not(.portada) {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card-sobreNosotros {
+  display: flex;
+  border: #e8c39e solid;
+  align-items: center;
+  width: 80%;
+  text-align: justify;
+  margin-bottom: 6rem;
+  border-radius: 0.8rem; }
+  .card-sobreNosotros img {
+    width: 24rem;
+    height: 24rem;
+    margin: 1rem;
+    object-fit: cover;
+    border-radius: .8rem; }
+  .card-sobreNosotros p {
+    margin: 0 2rem 0 .5rem;
+    font-size: 2rem; }
+
+.main-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem; }
+
+.carousel {
+  width: 70rem;
+  display: flex;
+  flex-direction: row;
+  border: #e8c39e solid 0.5rem;
+  border-radius: 1rem; }
+  .carousel img {
+    border-radius: .5rem; }
+
+.carousel-inner h2 {
+  font-size: 3.5rem;
+  font-family: monospace;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 1.5rem;
+  transition: all 0.4s; }
+  .carousel-inner h2:hover {
+    border-radius: 3rem;
+    background-color: rgba(128, 128, 128, 0.8); }
+
+.section-contactos {
+  grid-area: main; }
+
+.tituloPages {
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 1rem; }
+
+form {
+  margin: 4rem auto;
+  width: 50%;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: #e8c39e solid;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  background-color: #fff5ea; }
+  form input {
+    font-family: Arial, Helvetica, sans-serif; }
+
+.numLabel {
+  margin-top: 1rem; }
+
+.submit {
+  background-color: white;
+  border: #dddddd solid 0.2rem;
+  border-radius: 0.8rem;
+  font-size: 1.15rem;
+  padding: 0.3rem 0.5rem; }
 
 footer {
   border: #e8c39e solid 1rem;
@@ -203,13 +362,13 @@ footer {
     margin-right: 0.7rem; }
   .descripcionIndex {
     font-size: 2.2rem; }
-  section img {
+  .section-index img {
     height: 23rem;
     width: 24rem; }
-  .brownie, .cheesecake, .tiramisu {
+  .card-brownie, .card-cheesecake, .card-tiramisu {
     margin-left: 15rem;
     margin-right: 3rem; }
-  .budin, .flan, .volcan {
+  .card-budin, .card-flan, .card-volcan {
     margin-left: 3rem;
     margin-right: 15rem; }
   .linksDePie {
@@ -218,10 +377,10 @@ footer {
     font-size: 1.3rem; } }
 
 @media (max-width: 1100px) {
-  .brownie, .cheesecake, .tiramisu {
+  .card-brownie, .card-cheesecake, .card-tiramisu {
     margin-left: 10rem;
     margin-right: 3rem; }
-  .budin, .flan, .volcan {
+  .card-budin, .card-flan, .card-volcan {
     margin-left: 3rem;
     margin-right: 10rem; } }
 
@@ -234,12 +393,12 @@ footer {
     width: 100%; } }
 
 @media (max-width: 920px) {
-  section {
-    margin: 2rem 5rem 2rem 5rem; }
-  .brownie, .cheesecake, .tiramisu {
+  .section-index {
+    margin: 2rem 5rem; }
+  .card-brownie, .card-cheesecake, .card-tiramisu {
     margin-left: 4rem;
     margin-right: 2rem; }
-  .budin, .flan, .volcan {
+  .card-budin, .card-flan, .card-volcan {
     margin-left: 2rem;
     margin-right: 4rem; }
   form {
@@ -248,13 +407,11 @@ footer {
 @media (max-width: 810px) {
   .imagen {
     width: 100%; }
-  section {
-    margin: 2rem 19rem; }
-    section img {
-      height: 22rem;
-      width: 23rem; }
-    section h2 {
-      font-size: 2rem; }
+  .section-index img {
+    height: 22rem;
+    width: 23rem; }
+  .section-index h2 {
+    font-size: 2rem; }
   .card-sobreNosotros {
     width: 96%;
     align-items: center; }
@@ -282,12 +439,14 @@ footer {
   .linksDePie {
     font-size: 1.4rem; }
   .iconos {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  form {
+    width: 70%; } }
 
 @media (max-width: 680px) {
   .grid {
     grid-template-areas: "nav" "titulo" "main" "brownie" "budin" "cheesecake" "flan" "tiramisu" "volcan" "footer"; }
-  .grid section {
+  .grid .section-index {
     margin: 2rem 12rem; }
   .tituloReceta {
     font-size: 3.2rem; }
@@ -297,7 +456,7 @@ footer {
     margin-left: 1.5rem; }
   .descripcionIndex {
     font-size: 2rem; }
-  section h2 {
+  .section-index h2 {
     font-size: 1.8rem; }
   .ingredientesUtencilios {
     font-size: 1.6rem; }
@@ -313,12 +472,14 @@ footer {
     margin-right: 1rem; }
     .tipsCuriosidades p {
       font-size: 1.8rem;
-      margin-left: 1.2rem; } }
+      margin-left: 1.2rem; }
+  .tituloPages {
+    font-size: 4.2rem; } }
 
 @media (max-width: 627px) {
-  .grid section {
+  .grid .section-index {
     margin: 2rem 9.5rem; }
-    .grid section img {
+    .grid .section-index img {
       height: 22rem;
       width: 23rem; }
   .card-sobreNosotros img {
@@ -338,7 +499,7 @@ footer {
     font-size: 0.9rem; } }
 
 @media (max-width: 500px) {
-  .grid section {
+  .grid .section-index {
     margin: 2rem 6rem; }
   .portada {
     padding-top: 1.5rem; }
@@ -356,7 +517,8 @@ footer {
     margin-right: 2rem;
     margin-left: 1.5rem; }
   form {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem;
+    width: 80%; } }
 
 @media (max-width: 360px) {
   .tituloReceta {
@@ -366,9 +528,11 @@ footer {
     height: 22rem; }
   .introReceta {
     font-size: 2rem; }
-  section img {
+  .section-index img {
     height: 23rem;
     width: 21rem; }
+  .tituloPages {
+    font-size: 3.5rem; }
   .carousel {
     width: 25rem; }
   .carousel-inner h3 {

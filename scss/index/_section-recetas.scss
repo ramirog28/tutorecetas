@@ -1,7 +1,4 @@
-$borderColor: #f1b579;
-$shadow: 3px 3px 3px #D8D8D8;
-
-section  {
+.section-index {
     border: $borderColor solid 0.5rem;
     border-radius: 10px;
     box-shadow: $shadow;
@@ -24,7 +21,7 @@ section  {
         box-shadow: 5px 5px 5px #cfcfcf;
     }
 
-    img {
+    .imgCardRecetas {
         height: 23rem;
         width: 23rem;
         object-fit: cover;
@@ -42,34 +39,32 @@ section  {
     }
 }
 
-.budin img {
+$cardRecetas:(
+    brownie:brownie,
+    budin:budin,
+    cheesecake:cheesecake,
+    flan:flan,
+    tiramisu:tiramisu,
+    volcan:volcan
+);
+
+@each $receta, $valorGrid in $cardRecetas {
+    .card-#{$receta}{
+        grid-area: $valorGrid;
+    }
+}
+
+.card-budin img {
     object-position: -9rem;
-}
-
-.brownie {
-    grid-area: brownie;
-}
-
-.budin {
-    grid-area: budin;
-}
-
-.cheesecake {
-    grid-area: cheesecake;
-}
-
-.flan {
-    grid-area: flan;
-}
-
-.tiramisu {
-    grid-area: tiramisu;
-}
-
-.volcan {
-    grid-area: volcan;
 }
 
 footer {
     grid-area: footer;
+}
+
+.section-index img {
+    height: 23rem;
+    width: 23rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
 }
