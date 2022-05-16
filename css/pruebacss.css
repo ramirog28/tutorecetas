@@ -318,39 +318,51 @@ form {
   padding: 0.3rem 0.5rem; }
 
 footer {
+  grid-area: footer; }
+
+.footer-principal {
   border: #e8c39e solid 1rem;
   grid-area: footer;
   display: flex;
   flex-direction: column; }
-  footer i {
+  .footer-principal .header-footer {
+    font-size: 2.4rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 80;
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem; }
+  .footer-principal i {
     color: #383737;
     font-size: 3.5em;
     transition: transform 0.2s; }
-    footer i:hover {
+    .footer-principal i:hover {
       transform: scale(1.2); }
+  .footer-principal .iconos {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 1rem 0;
+    background-color: #f1e1cb;
+    padding: 1rem 0 1rem 0;
+    border-radius: 2rem; }
 
-.iconos {
-  font-size: 1.4rem;
+.footer {
   display: flex;
-  justify-content: space-evenly;
-  margin: 2rem 0 1rem 0;
-  background-color: #f1e1cb;
-  padding: 1rem 0 1rem 0;
-  border-radius: 2rem; }
-
-.header-footer {
-  font-size: 2.4rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 80;
-  display: flex;
-  justify-content: center;
-  margin: 1.2rem; }
-
-.linksDePie {
-  font-size: 1.6rem;
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin: 1rem 1.5rem 0.5rem 1.5rem; }
+  margin: 2rem 8rem; }
+
+.footerDivList {
+  display: flex; }
+
+.footer-p {
+  font-size: 1.8rem;
+  position: relative;
+  left: -1rem; }
+
+.footer-list li {
+  font-size: 1.5rem; }
 
 @media (max-width: 1300px) {
   .grid {
@@ -370,11 +382,7 @@ footer {
     margin-right: 3rem; }
   .card-budin, .card-flan, .card-volcan {
     margin-left: 3rem;
-    margin-right: 15rem; }
-  .linksDePie {
-    font-size: 1.5rem; }
-  .iconos {
-    font-size: 1.3rem; } }
+    margin-right: 15rem; } }
 
 @media (max-width: 1100px) {
   .card-brownie, .card-cheesecake, .card-tiramisu {
@@ -436,12 +444,15 @@ footer {
     margin-left: 4rem; }
   .utencilios {
     margin-right: 4rem; }
-  .linksDePie {
-    font-size: 1.4rem; }
-  .iconos {
-    font-size: 1.2rem; }
+  .iconos a {
+    font-size: 1.6rem; }
   form {
-    width: 70%; } }
+    width: 70%; }
+  .footer {
+    margin: 2rem 0;
+    justify-content: space-around; }
+  .footer-p {
+    font-size: 1.7rem; } }
 
 @media (max-width: 680px) {
   .grid {
@@ -474,7 +485,9 @@ footer {
       font-size: 1.8rem;
       margin-left: 1.2rem; }
   .tituloPages {
-    font-size: 4.2rem; } }
+    font-size: 4.2rem; }
+  .iconos a {
+    font-size: 1.4rem; } }
 
 @media (max-width: 627px) {
   .grid .section-index {
@@ -495,8 +508,10 @@ footer {
   .header-footer {
     font-size: 2.2rem;
     margin-bottom: 0rem; }
-  .iconos {
-    font-size: 0.9rem; } }
+  .footer:first-child {
+    margin-left: 1.5rem; }
+  .footer:last-child {
+    margin-right: 1rem; } }
 
 @media (max-width: 500px) {
   .grid .section-index {
@@ -518,7 +533,15 @@ footer {
     margin-left: 1.5rem; }
   form {
     font-size: 1.3rem;
-    width: 80%; } }
+    width: 80%; }
+  .iconos a {
+    font-size: 1.3rem; }
+  .footerDivList {
+    margin: 0 .5rem; }
+  .footer-p {
+    font-size: 1.5rem; }
+  .footer-list li {
+    font-size: 1.3rem; } }
 
 @media (max-width: 360px) {
   .tituloReceta {
@@ -539,9 +562,11 @@ footer {
     font-size: 2.6rem; }
   .procedimiento img {
     width: 27rem; }
-  .linksDePie {
-    font-size: 1rem; }
   footer h4 {
     font-size: 2rem; }
-  .iconos {
-    font-size: 0.7rem; } }
+  .iconos a {
+    font-size: 1rem; }
+  .footer-p {
+    font-size: 1.4rem; }
+  .footer-list li {
+    font-size: 1.1rem; } }
