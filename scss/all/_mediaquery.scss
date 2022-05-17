@@ -246,12 +246,15 @@
 }
 
 @media (max-width:627px) {
-    .grid .section-index {
-        margin: 2rem 9.5rem;
+    .grid {
 
-        img {
-            height: 22rem;
-        width: 23rem;
+        .section-index {
+            margin: 2rem 9.5rem;
+
+            img {
+                height: 22rem;
+                width: 23rem;
+            }
         }
     }
     
@@ -298,9 +301,11 @@
         }
     }
     
-    .header-footer {
-        font-size: 2.2rem;
-        margin-bottom: 0rem;
+    .footer-principal {
+        .header-footer {
+            font-size: 2.4rem;
+            margin-bottom: 0rem;
+        }
     }
 
     .footer {
@@ -374,7 +379,13 @@
 
     .iconos {
         a{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+        }
+    }
+
+    .footer-principal {
+        .header-footer {
+            font-size: 2.2rem;
         }
     }
 
@@ -459,6 +470,11 @@
         }
     }
 
+    .footer-principal {
+        .header-footer {
+            font-size: 2rem;
+        }
+    }
 
     footer {
         h4 {

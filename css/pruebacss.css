@@ -352,15 +352,15 @@ footer {
   display: flex;
   flex-direction: column; }
   .footer-principal .header-footer {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: 80;
+    text-align: center;
     display: flex;
     justify-content: center;
     margin: 1.2rem; }
   .footer-principal i {
     color: #383737;
-    font-size: 3.5em;
+    font-size: 3.2em;
     transition: transform 0.2s; }
     .footer-principal i:hover {
       transform: scale(1.2); }
@@ -539,8 +539,8 @@ footer {
     font-size: 2.4rem; }
   .divError p:last-child {
     font-size: 1.8rem; }
-  .header-footer {
-    font-size: 2.2rem;
+  .footer-principal .header-footer {
+    font-size: 2.4rem;
     margin-bottom: 0rem; }
   .footer {
     margin: 2rem 1.5rem; }
@@ -580,7 +580,9 @@ footer {
     .divError p:last-child {
       font-size: 1.8rem; }
   .iconos a {
-    font-size: 1.3rem; }
+    font-size: 1.2rem; }
+  .footer-principal .header-footer {
+    font-size: 2.2rem; }
   .footerDivList {
     margin: 0 .5rem; }
   .footer-p {
@@ -617,6 +619,8 @@ footer {
       font-size: 1.7rem; }
     .divError p:last-child {
       font-size: 1.4rem; }
+  .footer-principal .header-footer {
+    font-size: 2rem; }
   footer h4 {
     font-size: 2rem; }
   .iconos a {
