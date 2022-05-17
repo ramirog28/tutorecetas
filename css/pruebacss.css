@@ -317,6 +317,32 @@ form {
   font-size: 1.15rem;
   padding: 0.3rem 0.5rem; }
 
+.section-contactos {
+  border-bottom: #e8c39e solid 1rem; }
+
+.divError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 10rem; }
+  .divError h1 {
+    font-size: 8rem;
+    text-align: center; }
+  .divError h2 {
+    font-size: 5.4rem;
+    margin-bottom: 2rem; }
+  .divError p {
+    font-size: 3rem; }
+    .divError p a {
+      color: blue; }
+  .divError p:last-child {
+    font-size: 2rem; }
+
 footer {
   grid-area: footer; }
 

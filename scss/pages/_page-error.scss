@@ -1,0 +1,37 @@
+@mixin centerFlexVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divError {
+    @include centerFlexVertical;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 10rem;
+
+    h1 {
+        font-size: 8rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 5.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    p {
+        font-size: 3rem;
+
+        a {
+            color: blue;
+        }
+    }
+
+    p:last-child {
+            font-size: 2rem;
+        }
+}
