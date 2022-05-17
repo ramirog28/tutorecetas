@@ -10,22 +10,26 @@
     "footer footer";
     }
 
-    .navbar li{
+    .navbar{
+        li {
         font-size: 1.5rem;
-    }
+        }
 
-    .navbar i {
-    font-size: 1.3rem;
-    margin-right: 0.7rem;
+        i {
+            font-size: 1.3rem;
+            margin-right: 0.7rem;
+        }
     }
 
     .descripcionIndex {
         font-size: 2.2rem;
     }
 
-    .section-index img {
-        height: 23rem;
-        width: 24rem;
+    .section-index {
+        img {
+            height: 23rem;
+            width: 24rem;
+        }
     }
 
     .card-brownie, .card-cheesecake, .card-tiramisu {
@@ -54,14 +58,14 @@
 @media (max-width:991px) {
     .navbar-collapse {
         border-radius: 0 0 1rem 1rem;
+
+        li {
+            width: 100%;
+        }
     }
 
     .navbar-nav {
         border-radius: 0 0 0.5rem 0.5rem;
-    }
-
-    .navbar-collapse li {
-        width: 100%;
     }
 }
 
@@ -125,8 +129,10 @@
         }
     }
 
-    .carousel-inner h3 {
-        font-size: 3rem;
+    .carousel-inner{
+        h3 {
+            font-size: 3rem;
+        }
     }
 
 
@@ -179,8 +185,14 @@
         "footer";
     }
 
-    .grid .section-index {
-        margin: 2rem 12rem;
+    .grid{
+        .section-index {
+            margin: 2rem 12rem;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
     }
 
     .tituloReceta {
@@ -195,10 +207,6 @@
 
     .descripcionIndex {
         font-size: 2rem;
-    }
-
-    .section-index h2 {
-        font-size: 1.8rem;
     }
 
     .ingredientesUtencilios {
@@ -247,14 +255,18 @@
         }
     }
     
-    .card-sobreNosotros img {
-        width: 13rem;
-        height: 13rem;
+    .card-sobreNosotros {
+        img {
+            width: 13rem;
+            height: 13rem;
+        }
     }
     
-    .card-sobreNosotros p {
-        margin: 0 1rem;
-        font-size: 1.4rem;
+    .card-sobreNosotros {
+        p {
+            margin: 0 1rem;
+            font-size: 1.4rem;
+        }
     }
 
 
@@ -262,28 +274,49 @@
         width: 34rem;
     }
     
-    .carousel-inner h3 {
-        font-size: 2.8rem;
+    .carousel-inner {
+        h3 {
+         font-size: 2.8rem;
+        }
     }
 
+    .divError {
+        h1 {
+        font-size: 6rem;
+        }
+
+        h2 {
+        font-size: 4.5rem;
+        }
+    
+        p {
+        font-size: 2.4rem;
+        }
+
+        p:last-child {
+            font-size: 1.8rem;
+        }
+    }
     
     .header-footer {
         font-size: 2.2rem;
         margin-bottom: 0rem;
     }
 
-    .footer:first-child {
-        margin-left: 1.5rem;
+    .footer {
+        margin: 2rem 1.5rem;
     }
 
-    .footer:last-child {
-        margin-right: 1rem;
+    .footerDivList {
+        margin: 0 1rem;
     }
 }
 
 @media (max-width:500px) {
-    .grid .section-index {
-        margin: 2rem 6rem;
+    .grid {
+        .section-index {
+            margin: 2rem 6rem;
+        }
     }
 
     .portada {
@@ -318,6 +351,27 @@
         width: 80%;
     }
 
+    .divError {
+        width: 90%;
+        top: 7rem;
+
+        h1 {
+        font-size: 5.5rem;
+        }
+
+        h2 {
+        font-size: 4.1rem;
+        }
+    
+        p {
+        font-size: 2.1rem;
+        }
+
+        p:last-child {
+            font-size: 1.8rem;
+        }
+    }
+
     .iconos {
         a{
     font-size: 1.3rem;
@@ -345,18 +399,22 @@
         font-size: 2.9rem;
     }
 
-    .tituloImagenRecetas img {
-        width: 20rem;
-        height: 22rem;
+    .tituloImagenRecetas {
+        img {
+            width: 20rem;
+            height: 22rem;
+        }
     }
 
     .introReceta {
         font-size: 2rem;
     }
 
-    .section-index img {
-        height: 23rem;
-        width: 21rem;
+    .section-index {
+        img {
+            height: 23rem;
+            width: 21rem;
+        }
     }
 
     .tituloPages {
@@ -367,21 +425,53 @@
         width: 25rem;
     }
 
-    .carousel-inner h3 {
-        font-size: 2.6rem;
+    .carousel-inner {
+        h3 {
+            font-size: 2.6rem;
+        }
     }
 
 
-    .procedimiento img {
-        width: 27rem;
+    .procedimiento {
+        img {
+            width: 27rem;
+        }
     }
 
-    footer h4 {
-        font-size: 2rem;
+
+    .divError {
+        width: 92%;
+
+        h1 {
+        font-size: 5rem;
+        }
+
+        h2 {
+        font-size: 3.8rem;
+        }
+    
+        p {
+        font-size: 1.7rem;
+        }
+
+        p:last-child {
+            font-size: 1.4rem;
+        }
+    }
+
+
+    footer {
+        h4 {
+            font-size: 2rem;
+        }
     }
 
     .iconos {
      a {font-size: 1rem;}
+    }
+
+    .footer {
+        margin: 2rem 1rem;
     }
 
     .footer-p {

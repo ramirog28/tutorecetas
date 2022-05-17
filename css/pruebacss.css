@@ -421,10 +421,10 @@ footer {
 @media (max-width: 991px) {
   .navbar-collapse {
     border-radius: 0 0 1rem 1rem; }
+    .navbar-collapse li {
+      width: 100%; }
   .navbar-nav {
-    border-radius: 0 0 0.5rem 0.5rem; }
-  .navbar-collapse li {
-    width: 100%; } }
+    border-radius: 0 0 0.5rem 0.5rem; } }
 
 @media (max-width: 920px) {
   .section-index {
@@ -485,6 +485,8 @@ footer {
     grid-template-areas: "nav" "titulo" "main" "brownie" "budin" "cheesecake" "flan" "tiramisu" "volcan" "footer"; }
   .grid .section-index {
     margin: 2rem 12rem; }
+    .grid .section-index h2 {
+      font-size: 1.8rem; }
   .tituloReceta {
     font-size: 3.2rem; }
   .introReceta {
@@ -493,8 +495,6 @@ footer {
     margin-left: 1.5rem; }
   .descripcionIndex {
     font-size: 2rem; }
-  .section-index h2 {
-    font-size: 1.8rem; }
   .ingredientesUtencilios {
     font-size: 1.6rem; }
   .procedimiento {
@@ -531,13 +531,21 @@ footer {
     width: 34rem; }
   .carousel-inner h3 {
     font-size: 2.8rem; }
+  .divError h1 {
+    font-size: 6rem; }
+  .divError h2 {
+    font-size: 4.5rem; }
+  .divError p {
+    font-size: 2.4rem; }
+  .divError p:last-child {
+    font-size: 1.8rem; }
   .header-footer {
     font-size: 2.2rem;
     margin-bottom: 0rem; }
-  .footer:first-child {
-    margin-left: 1.5rem; }
-  .footer:last-child {
-    margin-right: 1rem; } }
+  .footer {
+    margin: 2rem 1.5rem; }
+  .footerDivList {
+    margin: 0 1rem; } }
 
 @media (max-width: 500px) {
   .grid .section-index {
@@ -560,6 +568,17 @@ footer {
   form {
     font-size: 1.3rem;
     width: 80%; }
+  .divError {
+    width: 90%;
+    top: 7rem; }
+    .divError h1 {
+      font-size: 5.5rem; }
+    .divError h2 {
+      font-size: 4.1rem; }
+    .divError p {
+      font-size: 2.1rem; }
+    .divError p:last-child {
+      font-size: 1.8rem; }
   .iconos a {
     font-size: 1.3rem; }
   .footerDivList {
@@ -588,10 +607,22 @@ footer {
     font-size: 2.6rem; }
   .procedimiento img {
     width: 27rem; }
+  .divError {
+    width: 92%; }
+    .divError h1 {
+      font-size: 5rem; }
+    .divError h2 {
+      font-size: 3.8rem; }
+    .divError p {
+      font-size: 1.7rem; }
+    .divError p:last-child {
+      font-size: 1.4rem; }
   footer h4 {
     font-size: 2rem; }
   .iconos a {
     font-size: 1rem; }
+  .footer {
+    margin: 2rem 1rem; }
   .footer-p {
     font-size: 1.4rem; }
   .footer-list li {
